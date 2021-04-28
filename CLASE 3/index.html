@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica formularios</title>
+</head>
+<body>
+    <main>
+
+        <form action="forms.html" method="POST" target="_self">
+
+        <ul>
+            <li>
+                <label for="nombre y apellido">Nombre y Apellido: </label><input type="text" name="nombre y apellido" placeholder="Ingrese su nombre y apellido"><br><br>
+            </li>
+            <li>
+                <label for="fecha de nacimiento">Fecha de nacimiento: </label><input type="date"><br><br>
+            </li>
+            <li>
+                <label for="email">Email: </label><input type="text" placeholder="Ingrese su Email"><br><br>
+            </li>
+            <li>   
+                <label for="contraseña">Contraseña: </label><input type="password" placeholder="Ingrese su contraseña">
+            </li>
+        </ul>
+
+        <div>
+            <label for="ocupación">Ocupación: </label>
+            <input type="radio" id="estudiante" name="ocupación" value="estudiante">
+            <label for="estudiante">Estudiante</label>
+            <input type="radio" id="profesional" name="ocupación" value="profesional">
+            <label for="profesional">Profesional</label>
+            <input type="radio" id="otro" name="ocupación" value="otro">
+            <label for="otro">Otro</label> 
+        </div>
+            <br>
+        <div>
+            <label for="Horario de contacto">Horario de contacto: </label>
+            <input type="checkbox" id="A la mañana" name="horario de contacto" value="A la mañana">
+            <label for="mañana">A la mañana</label>
+            <input type="checkbox" id="a la tarde" name="horario de contacto" value="A la tarde"> 
+            <label for="tarde">A la tarde</label>
+            <input type="checkbox" id="a la noche" name="horario de contacto" value="A la noche">
+            <label for="noche">A la noche</label>
+        </div>
+        
+        <br>
+
+        <div>
+            <span>Agregue un comentario:</span><br>
+            <textarea name="comentario" id="" cols="30" rows="3">Puedes eliminar este texto predeterminado y escribir tu propio comentario</textarea>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="información al mail">Deseo recibir a mi email mas información</label>
+            <input type="checkbox" id="si/no" name="información al mail" value="si/no">
+        </div>
+        
+        <br>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restaurar">
+        </div>
+    
+        </form>
+    </main>
+</body>
+</html>

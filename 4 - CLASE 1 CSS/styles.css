@@ -1,0 +1,61 @@
+body {
+    background-color: #13162A;
+    text-align-last: center;
+}
+
+body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#title {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F9B90C;
+}
+
+#subtitle {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+}
+
+
+#contact {
+    font-family: Lato, sans-serif;
+    color: #A50305;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #F9B90C
+}
+
+.list {
+    font-family: Lato, sans-serif;
+    color: white;
+}
+
+.list li {
+    font-style: italic;
+    font-weight: lighter;

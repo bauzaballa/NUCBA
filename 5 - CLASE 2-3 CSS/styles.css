@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #01765e;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.relatives {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+header {
+    height: 250px;
+}
+
+main {
+    height: 620px;
+}
+
+footer{
+    height: 170px;
+}
+
+.title {
+    color: #940000;
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    left: 5%;
+    top: 19%;
+}
+
+.marca {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 10%;
+    top: 12%;
+}
+
+.marca img {
+    width: 120px;
+    height: auto;
+}
+
+.marcaec {
+    width: 246px;
+    height: 136px;
+    position: absolute;
+    left: 39%;
+    top: 4%;
+}
+
+.marcaec img {
+    width: 246;
+    height: auto;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    width: 560px;
+    height: auto;
+    left: 23%;
+    top: 32%;
+}
+
+footer .marca {
+    left: 10%;
+    top: 5%;
+}
+
+footer .marca img {
+    width: 90px;
+    height: auto;
+}
+
+.links {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.links li {
+    list-style: none;
+    font-style: italic;
+}

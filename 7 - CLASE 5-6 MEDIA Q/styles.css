@@ -1,0 +1,307 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #13162A;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*General*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #C1D0DA;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.yo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F9B90C;
+    text-align: center;
+    width: 150px;
+}
+
+.contact {
+    font-family: Montserrat, sans-serif;
+    color: #13162A;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+}
+
+.image img {
+    width: 150px;
+    height: auto;
+}
+
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    color: #F9B90C
+}
+
+.about {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.software {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formacion {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.text {
+    font-family: Lato, sans-serif;
+    color: #C1D0DA;
+    text-align: justify;
+}
+
+.adobe {
+    display: flex;
+}
+
+/*Phone*/
+
+@media(min-width: 414px) {
+
+    header {
+        width: 360px;
+        height: 130px;
+        margin-top: 17px;
+        padding: 10px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .image img {
+        width: 100px;
+        height: auto;
+    }
+
+    .contact {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .about {
+        width: 380px;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .about h2 {
+        display: none;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .software {
+        width: 380px;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .software h2 {
+        width: 100px;
+        height: auto;
+    }
+
+    .adobe {
+        width: 300px;
+        justify-content: space-around;
+    }
+
+    .formacion {
+        width: 380px;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .formacion .text {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 150px;
+    }
+}
+
+/*Tablet*/
+
+@media(min-width: 768px) {
+
+    main {
+        width: 769px;
+    }
+
+    header {
+        width: 700px;
+        height: 200px;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .contact {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    .about {
+        width: 700px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .software {
+        width: 230px;
+        height: 250px;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .software h2 {
+        width: 150px;
+    }
+
+    .adobe {
+        width: 200px;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    .adobe div {
+        width: 75px;
+        height: 75px;
+    }
+
+    .adobe div img{
+        width: 75px;
+    }
+
+    .formacion {
+        width: 380px;
+        height: 200px;
+    }
+
+    .formacion .text {
+        height: 175px;
+    }
+}
+
+/*Computer*/
+
+@media(min-width: 1200px) {
+
+    main {
+        width: 1200px;
+    }
+
+    header {
+        width: 1100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .about {
+        width: 380px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .software {
+        height: 260px;
+        margin-top: 10px;
+    }
+
+    .software h2 {
+        width: 175px;
+    }
+
+    .adobe div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .adobe div img {
+        width: 80px;
+    }
+}

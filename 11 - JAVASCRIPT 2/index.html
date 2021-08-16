@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Form with JS</title>
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Permanent Marker', cursive;
+            background: #e5ff6f;
+        }
+
+        form {
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            background: #808080a8;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5rem;
+        }
+
+        .input {
+            font-family: 'Permanent Marker', cursive;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .textarea{
+            font-family: 'Permanent Marker', cursive;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .check{
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+
+        .submit {
+            height: 50px;
+            background: #e5ff6f;
+            color: #000000;
+            border-radius: 0.5rem;
+        }
+
+        .input:focus {
+            background: #efdcff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Form with JS</h1>
+    
+
+    <form onsubmit={sendForm(event)}>
+        <input class="input" id="nombre" placeholder="Ecribe tu nombre" type="text">
+        <input class="input" id="apellido" placeholder="Ecribe tu apellido" type="text">
+        <input class="input" id="edad" placeholder="Ecribe tu edad" type="number">
+        <input class="input" id="email" placeholder="Escribe tu email" type="email">
+        <textarea class="textarea" id="comentario" rows="10" cols="50" placeholder="Deja un comentario aquí si lo necesitas:"></textarea>
+        <div class="check">
+        <input class="checkbox" id="terms" type="checkbox"><label for="checkbox"> Acepta todas las condiciones</label>
+        </div>
+        <input class="submit" type="submit" value="Enviar">
+    </form>
+    
+<script src="./index.js"></script>
+</body>
+</html>

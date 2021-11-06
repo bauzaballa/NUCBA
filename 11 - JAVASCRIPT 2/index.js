@@ -9,6 +9,7 @@ function sendForm(event){
     let terms = document.getElementById('terms').checked
     let comment = document.getElementById('comentario')
     let errorMessages = []
+    let valores = []
 
     console.log('Enviando formulario...')
 
@@ -25,7 +26,7 @@ function sendForm(event){
         errorMessages.push('\nIngresa una edad valida');
     }
 
-    if(email.value === null || name.value === '' || !email.value.match(mailformat)){
+    if(email.value === null || email.value === '' || !email.value.match(mailformat)){
         errorMessages.push('\nIngresa un email valido');
     }
 
